@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecommendViewController">
+            <connections>
+                <outlet property="categoryTableView" destination="EOY-T6-dfa" id="dL7-M9-1Ys"/>
+                <outlet property="userTableView" destination="zEK-N6-URy" id="w3w-l4-RfA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EOY-T6-dfa">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="DEP-od-0dJ"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="fHV-Js-CzO"/>
+                        <outlet property="delegate" destination="-1" id="6pM-YF-k5Z"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zEK-N6-URy">
+                    <rect key="frame" x="70" y="0.0" width="530" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="5Qw-GN-qgw"/>
+                        <outlet property="delegate" destination="-1" id="4BY-eT-1CK"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="EOY-T6-dfa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dih-uj-Tab"/>
+                <constraint firstAttribute="trailing" secondItem="zEK-N6-URy" secondAttribute="trailing" id="ThI-yl-tUd"/>
+                <constraint firstItem="EOY-T6-dfa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ino-EW-azR"/>
+                <constraint firstAttribute="bottom" secondItem="EOY-T6-dfa" secondAttribute="bottom" id="kMT-b7-3tf"/>
+                <constraint firstAttribute="bottom" secondItem="zEK-N6-URy" secondAttribute="bottom" id="ogj-Ui-UFG"/>
+                <constraint firstItem="zEK-N6-URy" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="qjM-cU-1Qg"/>
+                <constraint firstItem="zEK-N6-URy" firstAttribute="leading" secondItem="EOY-T6-dfa" secondAttribute="trailing" id="xi1-Zw-t4a"/>
+            </constraints>
+            <point key="canvasLocation" x="339" y="279"/>
+        </view>
+    </objects>
+</document>
