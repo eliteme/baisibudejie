@@ -26,5 +26,7 @@
 @property (nonatomic, assign) NSInteger repost;
 /** 评论的数量 */
 @property (nonatomic, assign) NSInteger comment;
+/** 是否为Vip */
+@property (nonatomic, assign, getter=is_sinaVip) BOOL is_vip;
 
 @end

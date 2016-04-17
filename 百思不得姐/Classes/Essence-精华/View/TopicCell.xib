@@ -104,15 +104,34 @@
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZZ-L6-Yq5" userLabel="帖子文字">
+                        <rect key="frame" x="10" y="55" width="257" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile_AddV_authen" translatesAutoresizingMaskIntoConstraints="NO" id="XVa-ov-fyr" userLabel="V认证">
+                        <rect key="frame" x="36" y="36" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="ZDK-9l-6Rt"/>
+                            <constraint firstAttribute="width" constant="14" id="sIJ-Gd-M7B"/>
+                        </constraints>
+                    </imageView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="MU0-yF-bDn" firstAttribute="leading" secondItem="B1J-EW-dX7" secondAttribute="leading" id="4lH-cr-ge2"/>
+                    <constraint firstItem="gZZ-L6-Yq5" firstAttribute="leading" secondItem="Tgo-XC-wLm" secondAttribute="leading" id="8FY-hk-w3q"/>
+                    <constraint firstItem="gZZ-L6-Yq5" firstAttribute="trailing" secondItem="apS-Kx-pmD" secondAttribute="trailing" id="8e8-dh-DCi"/>
                     <constraint firstItem="B1J-EW-dX7" firstAttribute="top" secondItem="Tgo-XC-wLm" secondAttribute="top" id="Bi3-Xx-yNA"/>
+                    <constraint firstItem="XVa-ov-fyr" firstAttribute="trailing" secondItem="Tgo-XC-wLm" secondAttribute="trailing" constant="5" id="Cce-PT-iTX"/>
+                    <constraint firstItem="gZZ-L6-Yq5" firstAttribute="top" secondItem="Tgo-XC-wLm" secondAttribute="bottom" constant="10" id="EgH-aX-F4Z"/>
                     <constraint firstAttribute="trailing" secondItem="apS-Kx-pmD" secondAttribute="trailing" constant="8" id="H44-xt-Iai"/>
                     <constraint firstAttribute="trailing" secondItem="YFN-xh-txZ" secondAttribute="trailing" id="Ic4-X2-M9D"/>
                     <constraint firstAttribute="bottom" secondItem="YFN-xh-txZ" secondAttribute="bottom" id="LNf-W3-u6g"/>
+                    <constraint firstItem="XVa-ov-fyr" firstAttribute="bottom" secondItem="Tgo-XC-wLm" secondAttribute="bottom" constant="5" id="Zjd-rM-0dM"/>
                     <constraint firstItem="MU0-yF-bDn" firstAttribute="bottom" secondItem="Tgo-XC-wLm" secondAttribute="bottom" id="eBQ-BY-DcS"/>
                     <constraint firstItem="YFN-xh-txZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="emj-5x-hdL"/>
+                    <constraint firstItem="YFN-xh-txZ" firstAttribute="top" secondItem="gZZ-L6-Yq5" secondAttribute="bottom" constant="20" id="gTV-RC-G9L"/>
                     <constraint firstItem="B1J-EW-dX7" firstAttribute="leading" secondItem="Tgo-XC-wLm" secondAttribute="trailing" constant="8" id="gqb-02-ikc"/>
                     <constraint firstItem="Tgo-XC-wLm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="myB-Iv-BjP"/>
                     <constraint firstItem="Tgo-XC-wLm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="qe5-QH-tnt"/>
@@ -122,18 +141,21 @@
             <connections>
                 <outlet property="caiButton" destination="JHi-9Z-X1X" id="OZy-8e-06L"/>
                 <outlet property="commentButton" destination="yz3-Ld-HuD" id="eSH-Eh-vou"/>
+                <outlet property="contentLabel" destination="gZZ-L6-Yq5" id="C5T-el-0bO"/>
                 <outlet property="dingButton" destination="QCf-oD-BBU" id="02J-6l-uiC"/>
                 <outlet property="nameLabel" destination="B1J-EW-dX7" id="4KR-Zo-Qef"/>
                 <outlet property="profileImageView" destination="Tgo-XC-wLm" id="hr6-xv-IEB"/>
                 <outlet property="shareButton" destination="dXM-Ux-uox" id="qHe-PJ-cxt"/>
                 <outlet property="timeLabel" destination="MU0-yF-bDn" id="diN-GW-Ujm"/>
+                <outlet property="vImageView" destination="XVa-ov-fyr" id="BNs-jr-QOP"/>
             </connections>
-            <point key="canvasLocation" x="214.5" y="239.5"/>
+            <point key="canvasLocation" x="171.5" y="281.5"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="FollowBtnBg" width="51" height="25"/>
         <image name="FollowBtnClickBg" width="51" height="25"/>
+        <image name="Profile_AddV_authen" width="14" height="14"/>
         <image name="cell-content-line" width="299" height="1"/>
         <image name="mainCellCai" width="20" height="20"/>
         <image name="mainCellCaiClick" width="20" height="20"/>

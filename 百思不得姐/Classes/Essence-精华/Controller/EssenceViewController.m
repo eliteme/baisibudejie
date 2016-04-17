@@ -8,11 +8,8 @@
 
 #import "EssenceViewController.h"
 #import "RecommendTagsViewController.h"
-#import "AllViewController.h"
-#import "VideoViewController.h"
-#import "VoiceViewController.h"
-#import "PictureViewController.h"
-#import "WordViewController.h"
+
+#import "HLTopicViewController.h"
 
 @interface EssenceViewController ()<UIScrollViewDelegate>
 
@@ -51,19 +48,24 @@
 #pragma mark - initialize childViewController
 - (void)setupChildVces
 {
-    AllViewController *allVC = [[AllViewController alloc] init];
+    HLTopicViewController *allVC = [[HLTopicViewController alloc] init];
+    allVC.type = HLTopicTypeAll;
     [self addChildViewController:allVC];
     
-    VideoViewController *vedioVC = [[VideoViewController alloc] init];
+    HLTopicViewController *vedioVC = [[HLTopicViewController alloc] init];
+    vedioVC.type = HLTopicTypeVideo;
     [self addChildViewController:vedioVC];
     
-    VoiceViewController *voiceVC = [[VoiceViewController alloc] init];
+    HLTopicViewController *voiceVC = [[HLTopicViewController alloc] init];
+    voiceVC.type = HLTopicTypeVoice;
     [self addChildViewController:voiceVC];
     
-    PictureViewController *pictureVC = [[PictureViewController alloc] init];
+    HLTopicViewController *pictureVC = [[HLTopicViewController alloc] init];
+    pictureVC.type = HLTopicTypePicture;
     [self addChildViewController:pictureVC];
     
-    WordViewController *wordVC = [[WordViewController alloc] init];
+    HLTopicViewController *wordVC = [[HLTopicViewController alloc] init];
+    wordVC.type = HLTopicTypeWord;
     [self addChildViewController:wordVC];
 }
 #pragma mark - 设置标签栏

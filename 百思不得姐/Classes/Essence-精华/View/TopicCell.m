@@ -19,6 +19,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *shareButton;
 
 @property (weak, nonatomic) IBOutlet UIButton *commentButton;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *vImageView;
+
 @end
 
 @implementation TopicCell
@@ -33,6 +36,7 @@
 {
     _topic = topic; // 设置其他控件
     [self.profileImageView sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    self.vImageView.hidden = !topic.is_vip;
     self.nameLabel.text = topic.name;
     self.timeLabel.text = topic.create_time;
     // 设置按钮文字
@@ -40,6 +44,7 @@
     [self setupButtonTitle:self.caiButton count:topic.cai placeholder:@"踩"];
     [self setupButtonTitle:self.shareButton count:topic.repost placeholder:@"分享"];
     [self setupButtonTitle:self.commentButton count:topic.comment placeholder:@"评论"];
+    self.contentLabel.text = topic.text;
 
 }
 - (void)setupButtonTitle:(UIButton *)button count:(NSInteger)count placeholder:(NSString *)placeholder

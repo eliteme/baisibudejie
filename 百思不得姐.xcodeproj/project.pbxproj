@@ -19,12 +19,9 @@
 		82261C351CC091BD00FDE0BF /* LoginRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 82261C331CC091BD00FDE0BF /* LoginRegisterViewController.m */; };
 		82261C361CC091BD00FDE0BF /* LoginRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82261C341CC091BD00FDE0BF /* LoginRegisterViewController.xib */; };
 		82261C391CC0ADBF00FDE0BF /* HLVerticalButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 82261C381CC0ADBF00FDE0BF /* HLVerticalButton.m */; };
+		824D145B1CC31CF1000C3528 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 824D145A1CC31CF1000C3528 /* NSDate+Extension.m */; };
 		8262075B1CBE9FFC00549A7D /* FriendTrendsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8262075A1CBE9FFC00549A7D /* FriendTrendsViewController.xib */; };
-		826B5E791CC2020200F50CE5 /* AllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826B5E781CC2020200F50CE5 /* AllViewController.m */; };
-		826B5E7C1CC2022A00F50CE5 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826B5E7B1CC2022A00F50CE5 /* VideoViewController.m */; };
-		826B5E7F1CC2023700F50CE5 /* VoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826B5E7E1CC2023700F50CE5 /* VoiceViewController.m */; };
-		826B5E821CC2024700F50CE5 /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826B5E811CC2024700F50CE5 /* PictureViewController.m */; };
-		826B5E851CC2025900F50CE5 /* WordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826B5E841CC2025900F50CE5 /* WordViewController.m */; };
+		826B5E851CC2025900F50CE5 /* HLTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826B5E841CC2025900F50CE5 /* HLTopicViewController.m */; };
 		826B5E881CC21BF400F50CE5 /* HLTopic.m in Sources */ = {isa = PBXBuildFile; fileRef = 826B5E871CC21BF400F50CE5 /* HLTopic.m */; };
 		826B5E8B1CC2298D00F50CE5 /* HLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 826B5E8A1CC2298D00F50CE5 /* HLConst.m */; };
 		826B5E8F1CC22ED700F50CE5 /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 826B5E8D1CC22ED700F50CE5 /* TopicCell.m */; };
@@ -94,17 +91,11 @@
 		82261C341CC091BD00FDE0BF /* LoginRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginRegisterViewController.xib; sourceTree = "<group>"; };
 		82261C371CC0ADBF00FDE0BF /* HLVerticalButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLVerticalButton.h; sourceTree = "<group>"; };
 		82261C381CC0ADBF00FDE0BF /* HLVerticalButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLVerticalButton.m; sourceTree = "<group>"; };
+		824D14591CC31CF1000C3528 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Extension.h"; path = "Extension/NSDate+Extension.h"; sourceTree = "<group>"; };
+		824D145A1CC31CF1000C3528 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Extension.m"; path = "Extension/NSDate+Extension.m"; sourceTree = "<group>"; };
 		8262075A1CBE9FFC00549A7D /* FriendTrendsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendTrendsViewController.xib; sourceTree = "<group>"; };
-		826B5E771CC2020200F50CE5 /* AllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllViewController.h; sourceTree = "<group>"; };
-		826B5E781CC2020200F50CE5 /* AllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllViewController.m; sourceTree = "<group>"; };
-		826B5E7A1CC2022A00F50CE5 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
-		826B5E7B1CC2022A00F50CE5 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
-		826B5E7D1CC2023700F50CE5 /* VoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoiceViewController.h; sourceTree = "<group>"; };
-		826B5E7E1CC2023700F50CE5 /* VoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoiceViewController.m; sourceTree = "<group>"; };
-		826B5E801CC2024700F50CE5 /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
-		826B5E811CC2024700F50CE5 /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
-		826B5E831CC2025900F50CE5 /* WordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordViewController.h; sourceTree = "<group>"; };
-		826B5E841CC2025900F50CE5 /* WordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordViewController.m; sourceTree = "<group>"; };
+		826B5E831CC2025900F50CE5 /* HLTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTopicViewController.h; sourceTree = "<group>"; };
+		826B5E841CC2025900F50CE5 /* HLTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTopicViewController.m; sourceTree = "<group>"; };
 		826B5E861CC21BF400F50CE5 /* HLTopic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLTopic.h; sourceTree = "<group>"; };
 		826B5E871CC21BF400F50CE5 /* HLTopic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLTopic.m; sourceTree = "<group>"; };
 		826B5E891CC2298D00F50CE5 /* HLConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HLConst.h; path = Extension/HLConst.h; sourceTree = "<group>"; };
@@ -222,16 +213,8 @@
 				8219C5EB1CBD116F009A136E /* EssenceViewController.m */,
 				82A8D9A41CBFBC5A00499EB5 /* RecommendTagsViewController.h */,
 				82A8D9A51CBFBC5A00499EB5 /* RecommendTagsViewController.m */,
-				826B5E771CC2020200F50CE5 /* AllViewController.h */,
-				826B5E781CC2020200F50CE5 /* AllViewController.m */,
-				826B5E7A1CC2022A00F50CE5 /* VideoViewController.h */,
-				826B5E7B1CC2022A00F50CE5 /* VideoViewController.m */,
-				826B5E7D1CC2023700F50CE5 /* VoiceViewController.h */,
-				826B5E7E1CC2023700F50CE5 /* VoiceViewController.m */,
-				826B5E801CC2024700F50CE5 /* PictureViewController.h */,
-				826B5E811CC2024700F50CE5 /* PictureViewController.m */,
-				826B5E831CC2025900F50CE5 /* WordViewController.h */,
-				826B5E841CC2025900F50CE5 /* WordViewController.m */,
+				826B5E831CC2025900F50CE5 /* HLTopicViewController.h */,
+				826B5E841CC2025900F50CE5 /* HLTopicViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -433,6 +416,8 @@
 				82A5B35F1CBE7D5000094777 /* UIBarButtonItem+Extension.m */,
 				826B5E891CC2298D00F50CE5 /* HLConst.h */,
 				826B5E8A1CC2298D00F50CE5 /* HLConst.m */,
+				824D14591CC31CF1000C3528 /* NSDate+Extension.h */,
+				824D145A1CC31CF1000C3528 /* NSDate+Extension.m */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -751,18 +736,15 @@
 				8281B8BD1CBF6531001D20AF /* RecommendUser.m in Sources */,
 				826B5E8B1CC2298D00F50CE5 /* HLConst.m in Sources */,
 				82A8D9AD1CBFBCB500499EB5 /* RecommendTagCell.m in Sources */,
-				826B5E7C1CC2022A00F50CE5 /* VideoViewController.m in Sources */,
 				8281B8B41CBF44F1001D20AF /* RecommendCategoryCell.m in Sources */,
+				824D145B1CC31CF1000C3528 /* NSDate+Extension.m in Sources */,
 				8219C5F51CBD11ED009A136E /* MeViewController.m in Sources */,
 				8219C5FE1CBD182B009A136E /* MainNavigationController.m in Sources */,
 				82A8D9A61CBFBC5A00499EB5 /* RecommendTagsViewController.m in Sources */,
 				8219C6031CBD18CD009A136E /* MainTabBar.m in Sources */,
-				826B5E7F1CC2023700F50CE5 /* VoiceViewController.m in Sources */,
-				826B5E851CC2025900F50CE5 /* WordViewController.m in Sources */,
-				826B5E821CC2024700F50CE5 /* PictureViewController.m in Sources */,
+				826B5E851CC2025900F50CE5 /* HLTopicViewController.m in Sources */,
 				8299B0291CBD02CF00051EE2 /* main.m in Sources */,
 				8281B8B01CBF3698001D20AF /* RecommendCategory.m in Sources */,
-				826B5E791CC2020200F50CE5 /* AllViewController.m in Sources */,
 				82A8D9A91CBFBC8400499EB5 /* RecommendTag.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

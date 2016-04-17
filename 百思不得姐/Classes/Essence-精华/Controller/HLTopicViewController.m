@@ -6,10 +6,10 @@
 //  Copyright © 2016年 dianer. All rights reserved.
 //
 
-#import "WordViewController.h"
+#import "HLTopicViewController.h"
 #import "HLTopic.h"
 #import "TopicCell.h"
-@interface WordViewController ()
+@interface HLTopicViewController ()
 
 /** 帖子数据 */
 @property (nonatomic, strong) NSMutableArray *topics;
@@ -24,7 +24,7 @@
 
 static NSString * const TopicCellId = @"topic";
 
-@implementation WordViewController
+@implementation HLTopicViewController
 
 - (NSMutableArray *)topics
 {
@@ -56,8 +56,8 @@ static NSString * const TopicCellId = @"topic";
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.backgroundColor = [UIColor clearColor];
 
-//    self.tableView.estimatedRowHeight = 40;
-//    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 40;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
 
 //    self.tableView.rowHeight = 280;
 }
@@ -77,7 +77,7 @@ static NSString * const TopicCellId = @"topic";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
-    params[@"type"] = @"29";
+    params[@"type"] = @(self.type);
     self.params = params;
     
     //发送请求
@@ -115,14 +115,14 @@ static NSString * const TopicCellId = @"topic";
  */
 - (void)loadMoreTopics
 {
-    return;
+//    return;
     //结束下拉
     [self.tableView.mj_header endRefreshing];
     
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"data";
-    params[@"type"] = @"29";
+    params[@"type"] = @(self.type);
     params[@"page"] = @(self.page);
     params[@"maxtime"] = self.maxtime;
     self.params = params;
@@ -177,9 +177,9 @@ static NSString * const TopicCellId = @"topic";
 
     return self.topics.count;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 160;
-}
+//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+//    return 160;
+//}
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *ID = @"cell";

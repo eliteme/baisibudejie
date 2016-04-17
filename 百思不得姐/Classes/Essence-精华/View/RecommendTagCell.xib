@@ -68,7 +68,7 @@
                 <outlet property="subNumberLabel" destination="xIu-Gf-GdH" id="eGr-Pl-Skh"/>
                 <outlet property="themeNameLabel" destination="ACJ-HL-ryA" id="qGl-YZ-seR"/>
             </connections>
-            <point key="canvasLocation" x="662.5" y="276"/>
+            <point key="canvasLocation" x="133.5" y="230"/>
         </tableViewCell>
     </objects>
     <resources>
