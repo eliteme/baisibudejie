@@ -17,6 +17,7 @@
 #import <MJRefresh.h>
 #import <UIImageView+WebCache.h>
 #import "HLConst.h"
+#import <POP.h>
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
@@ -29,4 +30,8 @@
 #define HLLogFunc HLLog(@"%s",__func__)
 #define HLRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define HLGlobalBg HLRGBColor(223, 223, 223)
+
+
+#define ScreenW [UIScreen mainScreen].bounds.size.width
+#define ScreenH [UIScreen mainScreen].bounds.size.height
 #endif /* PrefixHeader_pch */

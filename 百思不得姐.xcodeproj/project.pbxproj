@@ -26,6 +26,8 @@
 		826B5E8B1CC2298D00F50CE5 /* HLConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 826B5E8A1CC2298D00F50CE5 /* HLConst.m */; };
 		826B5E8F1CC22ED700F50CE5 /* TopicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 826B5E8D1CC22ED700F50CE5 /* TopicCell.m */; };
 		826B5E901CC22ED700F50CE5 /* TopicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 826B5E8E1CC22ED700F50CE5 /* TopicCell.xib */; };
+		826E5FBD1CC4B56000279943 /* PublishViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 826E5FBB1CC4B56000279943 /* PublishViewController.m */; };
+		826E5FBE1CC4B56000279943 /* PublishViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 826E5FBC1CC4B56000279943 /* PublishViewController.xib */; };
 		8281B8AA1CBF2FF5001D20AF /* RecommendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8281B8A81CBF2FF5001D20AF /* RecommendViewController.m */; };
 		8281B8AB1CBF2FF5001D20AF /* RecommendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8281B8A91CBF2FF5001D20AF /* RecommendViewController.xib */; };
 		8281B8AD1CBF338E001D20AF /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 8281B8AC1CBF338E001D20AF /* Foundation+Log.m */; };
@@ -103,6 +105,9 @@
 		826B5E8C1CC22ED700F50CE5 /* TopicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopicCell.h; sourceTree = "<group>"; };
 		826B5E8D1CC22ED700F50CE5 /* TopicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopicCell.m; sourceTree = "<group>"; };
 		826B5E8E1CC22ED700F50CE5 /* TopicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopicCell.xib; sourceTree = "<group>"; };
+		826E5FBA1CC4B56000279943 /* PublishViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublishViewController.h; sourceTree = "<group>"; };
+		826E5FBB1CC4B56000279943 /* PublishViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublishViewController.m; sourceTree = "<group>"; };
+		826E5FBC1CC4B56000279943 /* PublishViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PublishViewController.xib; sourceTree = "<group>"; };
 		8281B8A71CBF2FF5001D20AF /* RecommendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendViewController.h; sourceTree = "<group>"; };
 		8281B8A81CBF2FF5001D20AF /* RecommendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendViewController.m; sourceTree = "<group>"; };
 		8281B8A91CBF2FF5001D20AF /* RecommendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecommendViewController.xib; sourceTree = "<group>"; };
@@ -382,6 +387,9 @@
 		8219C5DD1CBD0B8D009A136E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				826E5FBA1CC4B56000279943 /* PublishViewController.h */,
+				826E5FBB1CC4B56000279943 /* PublishViewController.m */,
+				826E5FBC1CC4B56000279943 /* PublishViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -636,6 +644,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				826E5FBE1CC4B56000279943 /* PublishViewController.xib in Resources */,
 				8299B0371CBD02D000051EE2 /* LaunchScreen.storyboard in Resources */,
 				8299B0341CBD02D000051EE2 /* Assets.xcassets in Resources */,
 				8281B8B51CBF44F1001D20AF /* RecommendCategoryCell.xib in Resources */,
@@ -726,6 +735,7 @@
 				8299B02F1CBD02CF00051EE2 /* ViewController.m in Sources */,
 				8219C6061CBD2034009A136E /* UIView+Extension.m in Sources */,
 				8281B8B91CBF5FBA001D20AF /* RecommendUserCell.m in Sources */,
+				826E5FBD1CC4B56000279943 /* PublishViewController.m in Sources */,
 				8219C5FF1CBD182B009A136E /* MainTabBarController.m in Sources */,
 				8281B8AA1CBF2FF5001D20AF /* RecommendViewController.m in Sources */,
 				826B5E8F1CC22ED700F50CE5 /* TopicCell.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "MainTabBar.h"
+#import "PublishViewController.h"
 @interface MainTabBar()
 
 @property (nonatomic, weak) UIButton *publishButton;
@@ -37,7 +38,9 @@
 }
 - (void)publishClick
 {
-    
+   
+    PublishViewController *publishVC = [[PublishViewController alloc] init];
+    [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:publishVC animated:NO completion:nil];
 }
 - (void)layoutSubviews
 {
